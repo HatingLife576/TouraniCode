@@ -1,0 +1,8 @@
+if mic.connect{
+  then.if speaker.c{
+    play(file.audio<name.mp3>)
+  } else {
+  then.if headp.c{
+    play(file.audio<speaker.mp3>) // Yes the < > are important
+  }
+}
