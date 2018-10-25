@@ -1,0 +1,29 @@
+constant require(T2U);
+constant require(Int);
+constant require(Shapes);
+constant require(Screen);
+constant require(Print);
+constant require(Var);
+//This is going to be necessary only for a little while, in a future file I will make an easier way to do this
+
+varL startSetup = True;
+const.if<startSetup = True>{
+  scr(size(full));
+  
+  if<scr(size) = full>{
+    varL ready ={
+     writeC = 'ready to start!'
+    }
+   if<ready = done>{
+    scr.bgc.color(Red(220), Blue(255), Green(0));
+    item.create{
+      var.shape tensidething{
+        shape.sides(10).size(!=, 200,210,220,230,240,250,260,270,280,290); //Lables sides in a circle going counterclockwise
+      }
+    }
+    when.shape(tensidething) = done{
+      spin.shape(tensidething)
+    } 
+   }
+  }
+}
