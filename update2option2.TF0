@@ -1,0 +1,15 @@
+const req(Shapes, Print, Screen, Var, Other, Statements, Tokens, Audio, GameData, Movement, Int)
+
+on.startUp{
+  create.shape tensidething{
+    shape.sides(size(200,210,220,230,240,250,260,270,280,290 = px)
+  }
+  scr(size(full));
+  
+  when scr(size(full)){
+    bgc.color(Red(220), Blue(255), Green(0));
+    create.shape(tensidething){
+      spin(tensidething); 
+    }
+  }
+}
