@@ -1,0 +1,27 @@
+server{
+  server.file{
+    server.get(app.js){
+      //We set app.js and require it
+      server.setup{
+        require.in.Directory(app.js){
+          server.active?{
+            print.scr(size(full)){
+              printS(server)
+            }else{
+              print.scr(size(full)){
+                printS = 'OMG THE SERVER IS DOWN'
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+The thing is this is an example of bad code:
+The thing is that the code is super long, look at the other TSF0 file on this repotory
+Thank you
+-Safyre
+**\
