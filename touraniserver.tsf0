@@ -1,0 +1,23 @@
+start.server{
+  server.consoleLog("server starting");
+  if.server.startUp.active{
+    server.test{
+      if <server> = online{
+        no.errors{
+          server.printC = "The server is now online"; 
+        }else{
+          server.printC = "!!WARN!! - The file you are trying to start with errors!!";
+        }
+        
+       if no.errors = true{
+        scr.setup{
+            scr.size(full);
+            scr.bgc(black);
+            scr.text.color(green);
+            printS = server;
+          }
+        }
+      }
+    } 
+  }
+}
