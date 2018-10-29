@@ -1,0 +1,11 @@
+
+var orot = numstr/lettstr{
+  [0-9[a-z]]
+}
+printC = orot;
+/** this code generates a sring
+ ** the string of letters and numbers, either starting with a number, or a letter
+ ** This code will appear in the console log, no matter what, to appear on a screen do this:
+ 
+ scr(size(200, 200);
+ printS = orot;
